@@ -32,3 +32,4 @@ services:
       - ./nginx/errors:/usr/share/nginx/html/errors:ro
       - ./logs/nginx:/var/log/nginx
       - ./nginx/cache:/var/cache/nginx
+      - ./nginx/.htpasswd:/etc/nginx/.htpasswd:ro
